@@ -107,7 +107,7 @@ export async function getCars({
         }
         if(make) where.make = {equals:make,mode:"insensitive"};
         if(bodyType) where.bodyType = {equals:bodyType,mode:"insensitive"},
-        if(fuelType) where.fuelType = {equals:fuelType,mode:"insensitive"},
+        if (fuelType) where.fuelType = { equals: fuelType, mode: "insensitive" };
         if(transmission) where.transmission = {equals:transmission,mode:"insensitive"};
 
         //add price range

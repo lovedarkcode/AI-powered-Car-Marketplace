@@ -5,7 +5,7 @@ import {Heart, CarFront, Layout, ArrowLeft} from "lucide-react"
 import Link from 'next/link';
 import { SignedIn, SignedOut, SignInButton, UserButton} from "@clerk/nextjs";
 import Image from 'next/image';
-import { checkUser } from '@/lib/checkUser';
+import checkUser from '@/lib/checkUser';
 
 const Header = async ({ isAdminPage = false }) => {
   const user = await checkUser();

@@ -31,7 +31,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import EmiCalculator from "./emi-calculator";
+import {EmiCalculator} from "./emi-clculator";
 
 export function CarDetails(car,testDriveInfo){
     const router = useRouter()
